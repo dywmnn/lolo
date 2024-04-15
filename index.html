@@ -77,24 +77,25 @@
         <!-- login form-->
 
         <div class="login-form-container">
-            <div id="close-login-btn" class="far fa-times-circle"></div>
+    <div id="close-login-btn" class="far fa-times-circle"></div>
 
-            <!-- form building starts -->
+    <!-- form building starts -->
 
-            <form action="">
-                <h3>Войти</h3>
-                <span>Электронная почта</span>
-                <input type="email" name="" class="box" placeholder="" id="">
-                <span>Пароль</span>
-                <input type="password" name="" class="box" placeholder="" id="">
-                <div class="checkbox"> 
-                    <input type="checkbox" name="" id="remember-me">
-                    <label for="remember-me">Запомнить меня</label>
-                </div>
-                <input type="submit" value="Войти" class="btn">
-                <p>Забыли пароль? <a href="#">Нажмите сюда!</a></p>
-                <p>Нет аккаунта? <a href="#">Нажмите сюда!</a></p>
-            </form>
+    <form action="/register" method="POST"> <!-- Изменили атрибут action -->
+        <h3>Регистрация</h3> <!-- Изменили текст заголовка -->
+        <span>Электронная почта</span>
+        <input type="email" name="email" class="box" placeholder="" required> <!-- Добавили атрибут required для обязательного заполнения -->
+        <span>Пароль</span>
+        <input type="password" name="password" class="box" placeholder="" required> <!-- Добавили атрибут required для обязательного заполнения -->
+        <div class="checkbox"> 
+            <input type="checkbox" name="remember-me" id="remember-me">
+            <label for="remember-me">Запомнить меня</label>
+        </div>
+        <input type="submit" value="Зарегистрироваться" class="btn"> <!-- Изменили текст на кнопке -->
+        <p>Уже есть аккаунт? <a href="#">Войти</a></p> <!-- Добавили ссылку на страницу входа -->
+    </form>
+</div>
+
 
             <!-- form building ends and home section starts -->
             
